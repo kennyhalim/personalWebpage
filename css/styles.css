@@ -21,6 +21,8 @@ body, html {
   height: 50vh;
   color: white;
   font-weight: 700;
+  -webkit-animation: fadeInUp 1s ;
+  animation: fadeInUp 1s;
 }
 
 #headerKenny h1 {
@@ -32,6 +34,8 @@ body, html {
   padding-top: 25vh;
   display: inline-block;
   bottom: 0;
+  -webkit-animation: flipInX 1s;
+  animation: flipInX 1s;
 }
 
 #aboutMe {
