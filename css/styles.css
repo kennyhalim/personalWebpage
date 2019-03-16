@@ -1,0 +1,43 @@
+body, html {
+  text-align: center;
+  height: 100%;
+}
+
+.bg {
+  text-align: center;
+  background-image: url(../img/bg.jpg);
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#headerKenny {
+  padding-top: 30vh;
+  height: 50vh;
+  color: white;
+  font-weight: 700;
+}
+
+#headerKenny h1 {
+  font-size: 110px;
+}
+
+#content {
+  display: inline-block;
+  padding-top: 5vh;
+}
+
+#socialmedia {
+  padding-top: 25vh;
+  display: inline-block;
+  bottom: 0;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
