@@ -1,46 +1,125 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="js/scripts.js"></script>
+
     <title>Kenny Halim</title>
   </head>
-    <body class="container-fluid bg">
+    <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#aboutMe">ABOUT ME</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
       <div id="headerKenny">
         <h1>KENNY HALIM</h1>
       </div>
-      <!-- <div id="content">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>About Me</h3>
-          </div>
-          <div class="col-md-4">
-            <h3>Projects</h3>
-          </div>
-          <div class="col-md-4">
-            <h3>Contact</h3>
-          </div>
-        </div>
-      </div> -->
+
       <div class="centered">
-      <div id="socialmedia">
-        <div class="row">
-          <div class="col-md-3">
-            <a href="https://github.com/kennyhalim?tab=stars"><img src="img/github.png"></a>
-          </div>
-          <div class="col-md-3">
-            <a href="https://www.linkedin.com/in/kenny-halim-687485144"><img src="img/linkedin.png"></a>
-          </div>
-          <div class="col-md-3">
-            <a href="KHResume2019.pdf" target="_blank"><img src="img/resume.png"></a>
-          </div>
-          <div class="col-md-3">
-            <a href="mailto:kennyhalim98@gmail.com"><img src="img/email.png"></a>
+        <div id="socialmedia">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="https://github.com/kennyhalim?tab=stars"><img src="img/github.png"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="https://www.linkedin.com/in/kenny-halim-687485144"><img src="img/linkedin.png"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="KHResume2019.pdf" target="_blank"><img src="img/resume.png"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="mailto:kennyhalim98@gmail.com"><img src="img/email.png"></a>
+            </div>
           </div>
         </div>
       </div>
+      <div id="aboutMe">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About Me</h3>
+              <p>A recent graduate in Mathematics who specializes in programming as well as probability. Have at least 2 years experience with software development and looking forward to further enhance my knowledge in these areas.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Educations</h3>
+              <ul>
+                <li>Epicodus</li>
+                <li>University of Washington - Seattle</li>
+                <li>Edmonds Community College</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Previous Experiences</h3>
+              <ul>
+                <li>Mighty AI</li>
+                <li>Pricewaterhouse Cooper</li>
+                <li>Infonet Indonesia</li>
+                <li>Edmonds Community College</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+        <p><em>Looking forward your your email!</em></p>
+        <div class="row test">
+          <div class="col-md-4">
+            <p>Contact me here!</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Seattle, WA, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: +1 20636964392</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: kennyhalim98@gmail.com</p>
+          </div>
+          <div class="col-md-8">
+            <form action="mailto:kennyhalim98@gmail.com" method="post" enctype="text/plain">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <footer class="text-center">
+          <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+          <p><a href="https://github.com/kennyhalim?tab=stars">Kenny Halim &copy;</a></p>
+        </footer>
       </div>
 
 
