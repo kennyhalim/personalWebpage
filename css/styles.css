@@ -39,15 +39,27 @@ body, html {
 }
 
 #aboutMe {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 #aboutMe .container {
   padding: 80px 120px;
 }
 
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 30%;
+  height: 30%;
+  opacity: 0.9;
+}
+
 #aboutMe ul {
   text-align: left;
+}
+
+#contact {
+  padding-top: 5vh;
 }
 
 .btn {
